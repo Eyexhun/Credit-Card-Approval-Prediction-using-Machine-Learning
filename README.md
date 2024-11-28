@@ -8,7 +8,7 @@ This project is aimed at predicting credit card approval using various machine l
 - [Data Description](#data-description)
 - [Preprocessing](#preprocessing)
 - [Model Training](#model-training)
-- [Hyperparameter Tuning with GridSearchCV](#Hyperparameter-Tuning-with-GridSearchCV)
+- [Hyperparameter Tuning](#Hyperparameter-Tuning)
 - [Metrics](#metrics)
 - [Usage](#usage)
 

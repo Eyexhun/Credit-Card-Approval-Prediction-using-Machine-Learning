@@ -11,7 +11,8 @@ This project is aimed at predicting credit card approval using various machine l
 - [Hyperparameter Tuning](#Hyperparameter-Tuning)
 - [Metrics](#metrics)
 - [Usage](#usage)
-
+- [Conclusion](#conclusion)
+  
 ## Overview
 
 In this project, we use different machine learning algorithms to predict credit card approval. We apply **Logistic Regression**, **XGBoost**, **LightGBM**, and **Random Forest** models to the dataset. We also fine-tune these models using **GridSearchCV** for hyperparameter optimization and evaluate the performance of each model using several metrics, including **accuracy**, **precision**, **recall**, **F1-score**, and **ROC-AUC**.

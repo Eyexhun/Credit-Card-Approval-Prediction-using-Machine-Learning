@@ -8,7 +8,7 @@ This project is aimed at predicting credit card approval using various machine l
 - [Data Description](#data-description)
 - [Preprocessing](#preprocessing)
 - [Model Training](#model-training)
-- [Hyperparameter Tuning](#hyperparameter-tuning)
+- [Hyperparameter Tuning with GridSearchCV](#Hyperparameter-Tuning-with-GridSearchCV)
 - [Metrics](#metrics)
 - [Usage](#usage)
 
@@ -127,3 +127,17 @@ The output will be a comparison of the models' evaluation metrics, such as accur
 | XGBoost             | 0.8551   | 0.8704    | 0.8545   | 0.8624   | 0.8551  |
 | LightGBM            | 0.8551   | 0.8636    | 0.8636   | 0.8636   | 0.8545  |
 | Random Forest       | 0.8647   | 0.8475    | 0.9091   | 0.8772   | 0.8618  |
+
+## Conclusion
+
+Based on the evaluation metrics of the four models, we can summarize the following insights:
+
+1. **Random Forest** outperformed all other models with the highest **Accuracy** (0.8647), **Recall** (0.9091), and **F1-Score** (0.8772). It also demonstrated a strong **ROC-AUC** (0.8618), indicating good model performance across different thresholds. This model is particularly good at minimizing false negatives, which is crucial for tasks like credit card approval prediction.
+
+2. **XGBoost** showed competitive results, achieving a **high Accuracy** (0.8551), **Precision** (0.8704), and **F1-Score** (0.8624). With a **ROC-AUC** of 0.8551, it is a reliable model, especially for scenarios where a balance between precision and recall is important.
+
+3. **LightGBM** also demonstrated similar performance to XGBoost, with an **Accuracy** of 0.8551, **Precision** (0.8636), and **Recall** (0.8636). While its **ROC-AUC** (0.8545) was slightly lower than XGBoost, it still performed well, especially in terms of recall, making it suitable for problems requiring high sensitivity.
+
+4. **Logistic Regression** performed adequately with an **Accuracy** of 0.7681 and a **Recall** of 0.8091, but it lagged behind the other models in terms of **Precision**, **F1-Score**, and **ROC-AUC**. It may be useful as a baseline model or for scenarios where a simpler, less computationally intensive approach is needed.
+
+Overall, **Random Forest** appears to be the best-performing model for this credit card approval prediction task, followed closely by **XGBoost** and **LightGBM**. Depending on the specific requirements of the application (e.g., precision vs. recall trade-off), either of these models can be chosen for deployment.

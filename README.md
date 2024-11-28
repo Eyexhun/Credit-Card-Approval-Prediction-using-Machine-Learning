@@ -65,7 +65,7 @@ Four machine learning models are used to predict credit card approval:
 
 These models are trained on the preprocessed dataset.
 
-## Hyperparameter Tuning with GridSearchCV
+## Hyperparameter Tuning
 
 **GridSearchCV** is used to search for the best hyperparameters for each model using cross-validation. The following hyperparameter grids are used:
 
